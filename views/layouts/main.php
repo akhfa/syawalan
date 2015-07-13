@@ -17,51 +17,55 @@ AppAsset::register($this);
     <meta charset="<?= Yii::$app->charset ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?= Html::csrfMetaTags() ?>
-    <title><?= Html::encode($this->title) ?></title>
+    <title><?= Html::encode($this->title) ?>Syawal PMR Wira Smansa</title>
     <?php $this->head() ?>
 </head>
 <body>
 
 <?php $this->beginBody() ?>
-    <div class="wrap">
-        <?php
-            NavBar::begin([
-                'brandLabel' => 'My Company',
-                'brandUrl' => Yii::$app->homeUrl,
-                'options' => [
-                    'class' => 'navbar-inverse navbar-fixed-top',
-                ],
-            ]);
-            echo Nav::widget([
-                'options' => ['class' => 'navbar-nav navbar-right'],
-                'items' => [
-                    ['label' => 'Home', 'url' => ['/site/index']],
-                    ['label' => 'About', 'url' => ['/site/about']],
-                    ['label' => 'Contact', 'url' => ['/site/contact']],
-                    Yii::$app->user->isGuest ?
-                        ['label' => 'Login', 'url' => ['/site/login']] :
-                        ['label' => 'Logout (' . Yii::$app->user->identity->username . ')',
-                            'url' => ['/site/logout'],
-                            'linkOptions' => ['data-method' => 'post']],
-                ],
-            ]);
-            NavBar::end();
-        ?>
 
-        <div class="container">
-            <?= Breadcrumbs::widget([
-                'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-            ]) ?>
-            <?= $content ?>
+    <?= $content ?>
+
+<!-- footer -->
+<div class="footer">
+    <div class="container">
+        <div class="footer-left">
+            <p>Copyright © 2015 Zooz. All Rights Reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
         </div>
+        <div class="footer-right">
+            <ul>
+                <li><a href="#" class="facebook"></a></li>
+                <li><a href="#" class="in"></a></li>
+                <li><a href="#" class="v"></a></li>
+            </ul>
+        </div>
+        <div class="clearfix"> </div>
     </div>
+</div>
+<!-- //footer -->
 
-    <footer class="footer">
-        <div class="container">
-            <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
-            <p class="pull-right"><?= Yii::powered() ?></p>
-        </div>
-    </footer>
+<!-- //contact -->
+
+<!-- here stars scrolling icon -->
+<script type="text/javascript">
+    $(document).ready(function() {
+        /*
+         var defaults = {
+         containerID: 'toTop', // fading element id
+         containerHoverID: 'toTopHover', // fading element hover id
+         scrollSpeed: 1200,
+         easingType: 'linear'
+         };
+         */
+
+        $().UItoTop({ easingType: 'easeOutQuart' });
+
+    });
+</script>
+<!-- //here ends scrolling icon -->
+<!-- for bootstrap working -->
+<!--<script src="js/bootstrap.js"> </script>-->
+<!-- //for bootstrap working -->
 
 <?php $this->endBody() ?>
 </body>
