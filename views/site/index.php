@@ -1,6 +1,8 @@
 <?php
 /* @var $this yii\web\View */
 use yii\grid\GridView;
+use yii\widgets\ActiveForm;
+use yii\helpers\Html;
 
 $this->title = 'My Yii Application';
 ?>
@@ -388,14 +390,36 @@ $this->title = 'My Yii Application';
             </div>
             <div class="col-md-6 contact-top-right">
                 <div class="contact-textarea">
-                    <form>
-                        <input type="text" value="First Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'First Name';}"/>
-                        <input type="text" value="Second Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Second Name';}"/>
-                        <input type="text" value="Email Id" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email Id';}"/>
-                        <textarea value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message..</textarea>
-                        <input type="submit" value="Submit" >
-                        <input type="reset" value="Clear" >
-                    </form>
+                    <?php $form = ActiveForm::begin(
+                        [
+                            'action' => 'kehadiran/create',
+                            'options' => [
+//                                'class' => 'userform'
+                            ]
+                        ]
+                    ); ?>
+                    <?= $form->field($modelKehadiran, 'nama')->textInput(['maxlength' => true]) ?>
+
+                    <?= $form->field($modelKehadiran, 'alamat')->textarea(['rows' => 6]) ?>
+
+                    <?= $form->field($modelKehadiran, 'hp')->textInput(['maxlength' => true]) ?>
+
+                    <?= $form->field($modelKehadiran, 'angkatan')->textInput(['maxlength' => true]) ?>
+
+                    <div class="form-group">
+                        <?= Html::submitButton('Daftar', ['class' => 'btn btn-success']) ?>
+                    </div>
+<!--                    <form>-->
+<!--                        <input type="text" value="First Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'First Name';}"/>-->
+<!--                        <input type="text" value="Second Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Second Name';}"/>-->
+<!--                        <input type="text" value="Email Id" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email Id';}"/>-->
+<!--                        <textarea value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message..</textarea>-->
+<!--                        <input type="submit" value="Submit" >-->
+<!--                        <input type="reset" value="Clear" >-->
+<!--                    </form>-->
+<!--                    --><?//= $this->render('../kehadiran/_form', [
+//                        'model' => $modelKehadiran,
+//                    ]) ?>
                 </div>
             </div>
             <div class="clearfix"></div>

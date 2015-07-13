@@ -9,6 +9,7 @@ use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
 use app\models\KehadiranSearch;
+use app\models\Kehadiran;
 
 class SiteController extends Controller
 {
@@ -52,10 +53,12 @@ class SiteController extends Controller
     {
         $searchModel = new KehadiranSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        $modelKehadiran = new Kehadiran();
 
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
+            'modelKehadiran' => $modelKehadiran,
         ]);
     }
 
