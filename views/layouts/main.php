@@ -30,7 +30,7 @@ AppAsset::register($this);
 <div class="footer">
     <div class="container">
         <div class="footer-left">
-            <p>Copyright © 2015 Zooz. All Rights Reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+            <p>Copyright © 2015 All Rights Reserved | Design by <a href="http://w3layouts.com/">W3layouts</a> | Customized by <a href="https://www.facebook.com/akhmadfakhoni">akhfa</a> </p>
         </div>
         <div class="footer-right">
             <ul>
