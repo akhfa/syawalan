@@ -27,7 +27,8 @@ $this->title = 'My Yii Application';
                     <li><a href="#about" class="scroll">About</a></li>
                     <li><a href="#news" class="scroll">News & Events</a></li>
                     <li><a href="#gallery" class="scroll">Gallery</a></li>
-                    <li><a href="#contact" class="scroll">Catch</a></li>
+                    <li><a href="#contact" class="scroll">Pendaftaran</a></li>
+                    <li><a href="#daftarHadir" class="scroll">Daftar Hadir</a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </nav>
@@ -376,13 +377,11 @@ $this->title = 'My Yii Application';
     </div>
 </div>
 <!-- //gallery -->
-<!-- contact -->
+<!-- pendaftaran -->
 <div class="contact" id="contact">
     <div class="container">
-        <h3>Contact Us</h3>
-        <p class="rem eos">Sed ut perspiciatis unde omnis iste natus error
-            sit voluptatem accusantium doloremque laudantium, totam rem
-            aperiam.</p>
+        <h3>Pendaftaran</h3>
+        <p class="rem eos">Silahkan melakukan pedaftaran melalui form di bawah ini</p>
         <div class="contact-top">
             <div class="col-md-6 contact-top-left">
                 <iframe width="600" height="450" frameborder="0" style="border:0"
@@ -424,7 +423,13 @@ $this->title = 'My Yii Application';
             </div>
             <div class="clearfix"></div>
         </div>
+    </div>
+</div>
+
+<div class="news" id="daftarHadir">
+    <div class="container">
         <div class="col-md-12">
+            <h3>Daftar kehadiran</h3>
             <?= GridView::widget([
                 'dataProvider' => $dataProvider,
                 'filterModel' => $searchModel,
