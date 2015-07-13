@@ -1,5 +1,7 @@
 <?php
 /* @var $this yii\web\View */
+use yii\grid\GridView;
+
 $this->title = 'My Yii Application';
 ?>
 <!-- banner -->
@@ -397,6 +399,24 @@ $this->title = 'My Yii Application';
                 </div>
             </div>
             <div class="clearfix"></div>
+        </div>
+        <div class="col-md-12">
+            <?= GridView::widget([
+                'dataProvider' => $dataProvider,
+                'filterModel' => $searchModel,
+                'columns' => [
+                    ['class' => 'yii\grid\SerialColumn'],
+
+//                    'no',
+                    'nama',
+//                    'alamat:ntext',
+//                    'hp',
+//                    'angkatan',
+                    // 'created',
+
+//                    ['class' => 'yii\grid\ActionColumn'],
+                ],
+            ]); ?>
         </div>
     </div>
 </div>
