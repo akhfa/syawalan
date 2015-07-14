@@ -304,7 +304,7 @@ $this->title = 'My Yii Application';
     <div class="container">
         <div class="col-md-12 text-center">
             <h3>Lokasi</h3>
-            <iframe width="900" height="450" frameborder="0" style="border:0"
+            <iframe height="450" frameborder="0" style="position: relative; width: 100%;"
                     src="https://www.google.com/maps/embed/v1/place?q=-7.702763%2C%20109.662840&key=AIzaSyBcsRQl4KBB3bi8zuC7EQik0BbXkT9MoS0"></iframe>
         </div>
     </div>
