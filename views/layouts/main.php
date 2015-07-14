@@ -38,9 +38,7 @@ AppAsset::register($this);
         </div>
         <div class="footer-right">
             <ul>
-                <li><a href="#" class="facebook"></a></li>
-                <li><a href="#" class="in"></a></li>
-                <li><a href="#" class="v"></a></li>
+                <li><a href="https://www.facebook.com/groups/303408655525/" class="facebook"></a></li>
             </ul>
         </div>
         <div class="clearfix"> </div>
