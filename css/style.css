@@ -68,7 +68,7 @@ a.navbar-brand{
 }
 a.navbar-brand:before{
 	content: '';
-	background: url(../images/img-sp.png) no-repeat 19px -5px;
+	/*background: url(../images/img-sp.png) no-repeat 19px -5px;*/
 	display: block;
 	height: 47px;
 }
