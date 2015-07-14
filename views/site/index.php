@@ -18,7 +18,7 @@ $this->title = 'My Yii Application';
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">PMR-09/10</a>
+                <a class="navbar-brand" href="#">PMR</a>
 
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
