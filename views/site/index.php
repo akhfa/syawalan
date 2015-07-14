@@ -18,7 +18,8 @@ $this->title = 'My Yii Application';
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">zooz</a>
+                <a class="navbar-brand" href="#">PMR</a>
+
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -27,7 +28,7 @@ $this->title = 'My Yii Application';
                     <li><a href="#about" class="scroll">About</a></li>
                     <li><a href="#news" class="scroll">News & Events</a></li>
                     <li><a href="#gallery" class="scroll">Gallery</a></li>
-                    <li><a href="#contact" class="scroll">Pendaftaran</a></li>
+                    <li><a href="#pendaftaran" class="scroll">Pendaftaran</a></li>
                     <li><a href="#daftarHadir" class="scroll">Daftar Hadir</a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
@@ -37,7 +38,7 @@ $this->title = 'My Yii Application';
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <div class="click">
-                <a href="single.html" class="hvr-shutter-in-vertical">Click.!</a>
+                <a href="#pendaftaran" class="hvr-shutter-in-vertical scroll">Daftar</a>
             </div>
         </div>
     </div>
@@ -378,7 +379,7 @@ $this->title = 'My Yii Application';
 </div>
 <!-- //gallery -->
 <!-- pendaftaran -->
-<div class="contact" id="contact">
+<div class="contact" id="pendaftaran">
     <div class="container">
         <h3>Pendaftaran</h3>
         <p class="rem eos">Silahkan melakukan pedaftaran melalui form di bawah ini</p>
