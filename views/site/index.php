@@ -256,11 +256,11 @@ $this->title = 'My Yii Application';
                             ]
                         ]
                     ); ?>
-                    <?= $form->field($modelKehadiran, 'nama')->textInput(['maxlength' => true]) ?>
+                    <?= $form->field($modelKehadiran, 'nama')->textInput(['maxlength' => true, 'placeholder' => 'Nama']) ?>
 
-                    <?= $form->field($modelKehadiran, 'alamat')->textarea(['rows' => 6]) ?>
+                    <?= $form->field($modelKehadiran, 'alamat')->textarea(['rows' => 6, 'placeholder' => 'Alamat']) ?>
 
-                    <?= $form->field($modelKehadiran, 'hp')->textInput(['maxlength' => true]) ?>
+                    <?= $form->field($modelKehadiran, 'hp')->textInput(['maxlength' => true, 'placeholder' => 'Nomor HP']) ?>
 
                     <?php
                     $array = array();

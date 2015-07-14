@@ -22,6 +22,7 @@ AppAsset::register($this);
     <?php $this->head() ?>
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::$app->homeUrl.'css/style.css'?>">
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::$app->homeUrl.'css/swipebox.css'?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::$app->homeUrl.'css/bootstrap.css'?>">
 </head>
 <body>
 

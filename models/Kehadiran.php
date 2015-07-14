@@ -47,9 +47,9 @@ class Kehadiran extends \yii\db\ActiveRecord
         return [
             'no' => 'No',
             'nama' => 'Nama',
-            'alamat' => 'Alamat',
-            'hp' => 'Hp',
-            'angkatan' => 'Angkatan',
+            'alamat' => 'Alamat Lengkap',
+            'hp' => 'Nomor HP',
+            'angkatan' => 'Angkatan Pensiun Dewan',
             'created' => 'Created',
         ];
     }
