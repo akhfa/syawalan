@@ -85,10 +85,9 @@ $this->title = 'My Yii Application';
 <!-- about -->
 <div id="about" class="about">
     <div class="container">
-        <h3>About Us</h3>
-        <p class="eos">Sed ut perspiciatis unde omnis iste natus error
-            sit voluptatem accusantium doloremque laudantium, totam rem
-            aperiam.</p>
+        <h3>Tentang Kami</h3>
+        <p class="eos">Kami adalah dewan PMR WIRA SMANSA Kebumen masa bakti 2009 / 2010
+        </p>
         <div class="about-grids">
             <div class="col-md-6 about-grid-left">
                 <img src="images/2.jpg" alt=" " class="img-responsive" />
@@ -242,7 +241,10 @@ $this->title = 'My Yii Application';
 <div class="contact" id="pendaftaran">
     <div class="container">
         <h3>Pendaftaran</h3>
-        <p class="rem eos">Silahkan melakukan pedaftaran melalui form di bawah ini</p>
+        <p class="rem eos">
+            Acara silaturahmi PMR Wia Smansa Kebumen akan dilaksanakan pada tanggal 21 Juli 2015.
+            Besar harapan kami agar keluarga besar PMR Wira Smansa dapat menghadiri acara ini.
+            Untuk konfirmasi kehadiran, silahkan isi form di bawah ini.</p>
         <div class="contact-top">
             <div class="col-md-6 contact-top-left">
                 <iframe width="600" height="450" frameborder="0" style="border:0"
