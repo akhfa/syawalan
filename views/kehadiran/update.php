@@ -14,8 +14,12 @@ $this->params['breadcrumbs'][] = 'Update';
 
     <h1><?= Html::encode($this->title) ?></h1>
 
-    <?= $this->render('_form', [
-        'model' => $model,
-    ]) ?>
+    <?php if(Yii::$app->user->isGuest){?>
+        <h3>Access Forbidden</h3>
+    <?php } else {?>
+        <?= $this->render('_form', [
+            'model' => $model,
+        ]) ?>
+    <?php } ?>
 
 </div>

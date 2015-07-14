@@ -10,6 +10,7 @@ use app\assets\AppAsset;
 
 AppAsset::register($this);
 ?>
+
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>">
@@ -19,6 +20,8 @@ AppAsset::register($this);
     <?= Html::csrfMetaTags() ?>
     <title>Syawalan PMR Wira Smansa</title>
     <?php $this->head() ?>
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::$app->homeUrl.'css/style.css'?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::$app->homeUrl.'css/swipebox.css'?>">
 </head>
 <body>
 

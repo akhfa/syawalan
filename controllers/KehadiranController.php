@@ -32,6 +32,7 @@ class KehadiranController extends Controller
      */
     public function actionIndex()
     {
+        $this->layout = 'back';
         $searchModel = new KehadiranSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
@@ -48,6 +49,7 @@ class KehadiranController extends Controller
      */
     public function actionView($id)
     {
+        $this->layout = 'back';
         return $this->render('view', [
             'model' => $this->findModel($id),
         ]);
@@ -60,6 +62,7 @@ class KehadiranController extends Controller
      */
     public function actionCreate()
     {
+        $this->layout = 'back';
         $model = new Kehadiran();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
@@ -79,6 +82,7 @@ class KehadiranController extends Controller
      */
     public function actionUpdate($id)
     {
+        $this->layout = 'back';
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
