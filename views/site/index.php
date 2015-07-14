@@ -25,17 +25,17 @@ $this->title = 'My Yii Application';
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#"  class="active">Home</a></li>
-                    <li><a href="#about" class="scroll">Tentang Kami</a></li>
-                    <li><a href="#gallery" class="scroll">Gallery</a></li>
+<!--                    <li><a href="#about" class="scroll">Tentang Kami</a></li>-->
+<!--                    <li><a href="#gallery" class="scroll">Gallery</a></li>-->
                     <li><a href="#pendaftaran" class="scroll">Pendaftaran</a></li>
-                    <li><a href="#daftarHadir" class="scroll">Daftar Hadir</a></li>
+                    <li><a href="#lokasi" class="scroll">Lokasi</a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </nav>
         <div class="banner-info">
-            <h1>Onepage Responsive Template</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h1>Selamat Datang!</h1>
+            <p>Website ini bertujuan untuk melakukan pendataan pada dewan PMR yang akan hadir
+            acara silaturahmi pada tanggal 21 Juli 2015 di Muktisari. SIlahkan klik tombol daftar berikut.</p>
             <div class="click">
                 <a href="#pendaftaran" class="hvr-shutter-in-vertical scroll">Daftar</a>
             </div>
@@ -44,7 +44,7 @@ $this->title = 'My Yii Application';
 </div>
 <!-- //banner -->
 <!-- banner-bottom -->
-<div class="banner-bottom">
+<div class="banner-bottom" style="display: none">
     <div class="container">
         <h3>Welcome!</h3>
         <p class="eos">Sed ut perspiciatis unde omnis iste natus error
@@ -83,7 +83,7 @@ $this->title = 'My Yii Application';
 </div>
 <!-- //banner-bottom -->
 <!-- about -->
-<div id="about" class="about">
+<div id="about" class="about" style="display: none">
     <div class="container">
         <h3>Tentang Kami</h3>
         <p class="eos">Kami adalah dewan PMR WIRA SMANSA Kebumen masa bakti 2009 / 2010
@@ -135,7 +135,7 @@ $this->title = 'My Yii Application';
 </div>
 <!-- //about -->
 <!-- gallery -->
-<div class="gallery" id="gallery">
+<div class="gallery" id="gallery" style="display: none">
     <div class="container">
         <h3>Gallery</h3>
         <p class="rem eos">Sed ut perspiciatis unde omnis iste natus error
@@ -300,7 +300,7 @@ $this->title = 'My Yii Application';
     </div>
 </div>
 
-<div class="news" id="daftarHadir">
+<div class="news" id="lokasi">
     <div class="container">
         <div class="col-md-12 text-center">
             <h3>Lokasi</h3>
