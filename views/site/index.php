@@ -238,7 +238,7 @@ $this->title = 'My Yii Application';
 </div>
 <!-- //gallery -->
 <!-- pendaftaran -->
-<div class="contact" id="pendaftaran">
+<div class="contact" id="pendaftaran" style="background: purple">
     <div class="container">
         <h3>Pendaftaran</h3>
         <p class="rem eos">
@@ -300,7 +300,7 @@ $this->title = 'My Yii Application';
     </div>
 </div>
 
-<div class="news" id="lokasi">
+<div class="news" id="lokasi" style="background: purple">
     <div class="container">
         <div class="col-md-12 text-center">
             <h3>Lokasi</h3>
