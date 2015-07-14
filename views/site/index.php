@@ -247,10 +247,6 @@ $this->title = 'My Yii Application';
             Untuk konfirmasi kehadiran, silahkan isi form di bawah ini.</p>
         <div class="contact-top">
             <div class="col-md-6 contact-top-left">
-                <iframe width="600" height="450" frameborder="0" style="border:0"
-                        src="https://www.google.com/maps/embed/v1/place?q=-7.702763%2C%20109.662840&key=AIzaSyBcsRQl4KBB3bi8zuC7EQik0BbXkT9MoS0"></iframe>
-            </div>
-            <div class="col-md-6 contact-top-right">
                 <div class="contact-textarea">
                     <?php $form = ActiveForm::begin(
                         [
@@ -266,23 +262,38 @@ $this->title = 'My Yii Application';
 
                     <?= $form->field($modelKehadiran, 'hp')->textInput(['maxlength' => true]) ?>
 
-                    <?= $form->field($modelKehadiran, 'angkatan')->textInput(['maxlength' => true]) ?>
+                    <?php
+                    $array = array();
+                    for($i = 1991; $i < 2016 ; $i++)
+                    {
+                        array_push($array, array($i => $i));
+                    }
+                    ?>
+
+                    <?= $form->field($modelKehadiran, 'angkatan')->dropDownList($array) ?>
 
                     <div class="form-group">
                         <?= Html::submitButton('Daftar', ['class' => 'btn btn-success']) ?>
                     </div>
-<!--                    <form>-->
-<!--                        <input type="text" value="First Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'First Name';}"/>-->
-<!--                        <input type="text" value="Second Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Second Name';}"/>-->
-<!--                        <input type="text" value="Email Id" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email Id';}"/>-->
-<!--                        <textarea value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message..</textarea>-->
-<!--                        <input type="submit" value="Submit" >-->
-<!--                        <input type="reset" value="Clear" >-->
-<!--                    </form>-->
-<!--                    --><?//= $this->render('../kehadiran/_form', [
-//                        'model' => $modelKehadiran,
-//                    ]) ?>
                 </div>
+            </div>
+            <div class="col-md-6 contact-top-right">
+                <?= GridView::widget([
+                    'dataProvider' => $dataProvider,
+                    'filterModel' => $searchModel,
+                    'columns' => [
+                        ['class' => 'yii\grid\SerialColumn'],
+
+//                    'no',
+                        'nama',
+//                    'alamat:ntext',
+//                    'hp',
+//                    'angkatan',
+                        // 'created',
+
+//                    ['class' => 'yii\grid\ActionColumn'],
+                    ],
+                ]); ?>
             </div>
             <div class="clearfix"></div>
         </div>
@@ -291,24 +302,10 @@ $this->title = 'My Yii Application';
 
 <div class="news" id="daftarHadir">
     <div class="container">
-        <div class="col-md-12">
-            <h3>Daftar kehadiran</h3>
-            <?= GridView::widget([
-                'dataProvider' => $dataProvider,
-                'filterModel' => $searchModel,
-                'columns' => [
-                    ['class' => 'yii\grid\SerialColumn'],
-
-//                    'no',
-                    'nama',
-//                    'alamat:ntext',
-//                    'hp',
-//                    'angkatan',
-                    // 'created',
-
-//                    ['class' => 'yii\grid\ActionColumn'],
-                ],
-            ]); ?>
+        <div class="col-md-12 text-center">
+            <h3>Lokasi</h3>
+            <iframe width="900" height="450" frameborder="0" style="border:0"
+                    src="https://www.google.com/maps/embed/v1/place?q=-7.702763%2C%20109.662840&key=AIzaSyBcsRQl4KBB3bi8zuC7EQik0BbXkT9MoS0"></iframe>
         </div>
     </div>
 </div>
