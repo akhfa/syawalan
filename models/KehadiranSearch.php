@@ -19,7 +19,7 @@ class KehadiranSearch extends Kehadiran
     {
         return [
             [['no'], 'integer'],
-            [['nama', 'alamat', 'hp', 'angkatan', 'created'], 'safe'],
+            [['nama', 'alamat', 'hp', 'bbm', 'line', 'whatsapp', 'angkatan', 'created'], 'safe'],
         ];
     }
 
@@ -64,6 +64,9 @@ class KehadiranSearch extends Kehadiran
         $query->andFilterWhere(['like', 'nama', $this->nama])
             ->andFilterWhere(['like', 'alamat', $this->alamat])
             ->andFilterWhere(['like', 'hp', $this->hp])
+            ->andFilterWhere(['like', 'bbm', $this->bbm])
+            ->andFilterWhere(['like', 'line', $this->line])
+            ->andFilterWhere(['like', 'whatsapp', $this->whatsapp])
             ->andFilterWhere(['like', 'angkatan', $this->angkatan]);
 
         return $dataProvider;

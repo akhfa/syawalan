@@ -11,6 +11,9 @@ use Yii;
  * @property string $nama
  * @property string $alamat
  * @property string $hp
+ * @property string $bbm
+ * @property string $line
+ * @property string $whatsapp
  * @property string $angkatan
  * @property string $created
  */
@@ -30,11 +33,13 @@ class Kehadiran extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['nama', 'alamat', 'hp', 'angkatan'], 'required'],
+            [['nama', 'hp', 'angkatan'], 'required'],
             [['alamat'], 'string'],
             [['created'], 'safe'],
             [['nama'], 'string', 'max' => 200],
-            [['hp'], 'string', 'max' => 20],
+            [['hp', 'line'], 'string', 'max' => 20],
+            [['bbm'], 'string', 'max' => 11],
+            [['whatsapp'], 'string', 'max' => 15],
             [['angkatan'], 'string', 'max' => 4]
         ];
     }
@@ -49,6 +54,9 @@ class Kehadiran extends \yii\db\ActiveRecord
             'nama' => 'Nama',
             'alamat' => 'Alamat Lengkap',
             'hp' => 'Nomor HP',
+            'bbm' => 'Pin BBM',
+            'line' => 'ID Line',
+            'whatsapp' => 'No Whatsapp',
             'angkatan' => 'Angkatan Pensiun Dewan',
             'created' => 'Created',
         ];

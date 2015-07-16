@@ -18,9 +18,13 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'hp')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'angkatan')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'bbm')->textInput(['maxlength' => true]) ?>
 
-<!--    --><?//= $form->field($model, 'created')->textInput() ?>
+    <?= $form->field($model, 'line')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'whatsapp')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'angkatan')->textInput(['maxlength' => true]) ?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>

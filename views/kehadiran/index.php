@@ -31,8 +31,11 @@ $this->params['breadcrumbs'][] = $this->title;
                 'nama',
                 'alamat:ntext',
                 'hp',
+                'bbm',
+                'line',
+                'whatsapp',
                 'angkatan',
-                // 'created',
+                'created',
 
                 ['class' => 'yii\grid\ActionColumn'],
             ],

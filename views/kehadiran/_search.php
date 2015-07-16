@@ -23,6 +23,12 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'hp') ?>
 
+    <?= $form->field($model, 'bbm') ?>
+
+    <?= $form->field($model, 'line') ?>
+
+    <?= $form->field($model, 'whatsapp') ?>
+
     <?= $form->field($model, 'angkatan') ?>
 
     <?php // echo $form->field($model, 'created') ?>
