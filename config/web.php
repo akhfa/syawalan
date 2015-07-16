@@ -7,6 +7,12 @@ $config = [
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'components' => [
+        'reCaptcha' => [
+            'name' => 'reCaptcha',
+            'class' => 'himiklab\yii2\recaptcha\ReCaptcha',
+            'siteKey' => '6Lcw7QkTAAAAAEfKq4wrro-qDRZD93B61crypOuh',
+            'secret' => '6Lcw7QkTAAAAAEs7WSGqf6LAJeUtd7KAdiuHUqA_',
+        ],
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => 'gBq84-1R9PA5kqVCxNOgouqGe8xIlCMz',
