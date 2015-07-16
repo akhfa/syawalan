@@ -3,6 +3,7 @@
 namespace app\models;
 
 use Yii;
+use himiklab\yii2\recaptcha\ReCaptchaValidator;
 
 /**
  * This is the model class for table "kehadiran".
@@ -19,6 +20,8 @@ use Yii;
  */
 class Kehadiran extends \yii\db\ActiveRecord
 {
+    public $reCaptcha;
+
     /**
      * @inheritdoc
      */
@@ -40,7 +43,8 @@ class Kehadiran extends \yii\db\ActiveRecord
             [['hp', 'line'], 'string', 'max' => 20],
             [['bbm'], 'string', 'max' => 11],
             [['whatsapp'], 'string', 'max' => 15],
-            [['angkatan'], 'string', 'max' => 4]
+            [['angkatan'], 'string', 'max' => 4],
+            [['reCaptcha'], ReCaptchaValidator::className()]
         ];
     }
 

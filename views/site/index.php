@@ -3,6 +3,7 @@
 use yii\grid\GridView;
 use yii\widgets\ActiveForm;
 use yii\helpers\Html;
+use himiklab\yii2\recaptcha\ReCaptcha;
 
 $this->title = 'My Yii Application';
 ?>
@@ -279,6 +280,10 @@ $this->title = 'My Yii Application';
                     <?= $form->field($modelKehadiran, 'angkatan')->dropDownList($array, ['prompt'=>'Angkatan Pensiun Dewan*'])->label(false) ?>
 
                     <h3 style="text-align: left; font-size: small">* = required</h3>
+
+                    <?= $form->field($modelKehadiran, 'reCaptcha')->widget(
+                        ReCaptcha::className()
+                    )->label(false) ?>
 
                     <div class="form-group">
                         <?= Html::submitButton('Daftar', ['class' => 'btn btn-success']) ?>
