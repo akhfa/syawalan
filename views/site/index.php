@@ -282,8 +282,7 @@ $this->title = 'My Yii Application';
                     <h3 style="text-align: left; font-size: small">* = required</h3>
 
                     <?= $form->field($modelKehadiran, 'reCaptcha')->widget(
-                        ReCaptcha::className(),
-                        ['siteKey' => '6Lcw7QkTAAAAAEfKq4wrro-qDRZD93B61crypOuh']
+                        ReCaptcha::className()
                     )->label(false) ?>
 
                     <div class="form-group">

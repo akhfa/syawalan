@@ -21,6 +21,7 @@ use himiklab\yii2\recaptcha\ReCaptchaValidator;
 class Kehadiran extends \yii\db\ActiveRecord
 {
     public $reCaptcha;
+
     /**
      * @inheritdoc
      */
@@ -43,7 +44,7 @@ class Kehadiran extends \yii\db\ActiveRecord
             [['bbm'], 'string', 'max' => 11],
             [['whatsapp'], 'string', 'max' => 15],
             [['angkatan'], 'string', 'max' => 4],
-            [[],ReCaptchaValidator::className(), 'secret' => '6Lcw7QkTAAAAAEs7WSGqf6LAJeUtd7KAdiuHUqA_']
+            [['reCaptcha'], ReCaptchaValidator::className()]
         ];
     }
 
