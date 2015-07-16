@@ -283,6 +283,9 @@ $this->title = 'My Yii Application';
                     <div class="form-group">
                         <?= Html::submitButton('Daftar', ['class' => 'btn btn-success']) ?>
                     </div>
+
+                    <?php ActiveForm::end(); ?>
+
                 </div>
             </div>
             <div class="col-md-6 contact-top-right">
