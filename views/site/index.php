@@ -243,9 +243,12 @@ $this->title = 'My Yii Application';
     <div class="container">
         <h3>Pendaftaran</h3>
         <p class="rem eos">
-            Acara silaturahmi PMR Wia Smansa Kebumen akan dilaksanakan pada tanggal 21 Juli 2015.
+            Acara silaturahmi PMR Wia Smansa Kebumen akan dilaksanakan pada<br>
+                <b>Hari / Tanggal : Selasa, 21 Juli 2015</b> <br>
+                <b>Waktu : 08.00 WIB</b> <br>
+                <b>Tempat : Balai Desa Muktisari</b> <br>
             Besar harapan kami agar keluarga besar PMR Wira Smansa dapat menghadiri acara ini.
-            Untuk konfirmasi kehadiran, silahkan isi form di bawah ini.</p>
+            Untuk konfirmasi kehadiran, silahkan isi form berikut</p>
         <div class="contact-top">
             <div class="col-md-6 contact-top-left">
                 <div class="contact-textarea">
